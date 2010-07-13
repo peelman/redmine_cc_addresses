@@ -1,0 +1,27 @@
+= Redmine CC Addresses Plugin
+
+Allows the addition of generic CC entries to allow status messages to get sent to non-registered or other external members of a project / Redmine instance.
+
+**Currently this just builds the CC list...we're not up to sending yet...that comes soon...
+
+==Author
+
+Nick Peelman
+* nick [at] peelman [dot] us
+* http://peelman.us
+* http://github.com/peelman
+
+==Credits
+Extrapolated and hacked as a cross between:
+* My own Departments plugin (http://github.com/peelman/redmine_departments)
+* Daniel Vandersluis's Redmine Resources plugin (http://github.com/dvandersluis/redmine_resources)
+and
+* Dave Thomas's CClist plugin (http://github.com/peoplemerge/redmine-cclist-plugin)
+
+Extra Special Thanks to Chris Moore (http://github.com/cdmwebs)
+
+==Licensing
+
+This plugin is open-source and licensed under the "GNU General Public License v2" (GPL, http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+
+* (C) 2010 Nick Peelman
