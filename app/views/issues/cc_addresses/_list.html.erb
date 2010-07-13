@@ -1,0 +1,37 @@
+<% if issue.cc_addresses.any? %>
+  <div class="wiki">
+    <ul>
+      <table style="width: 100%; border: 0; margin-bottom: 0;">
+        <% issue.cc_addresses.each do |cc_address| %>
+          <tr>
+            <td style="border: 0; padding: 0;">
+              <li>
+                <%= cc_address.mail %>
+              </li>
+            </td>
+            <% if authorize_for('cc_addresses', 'destroy') %>
+              <td style="border: 0; padding: 0;">
+                <%= link_to_remote(image_tag('delete.png'), {
+                  :url => {
+                    :controller => 'cc_addresses',
+                    :action => 'destroy',
+                    :issue_id => issue,
+                    :id => cc_address,
+                    :only_path => true
+                  },
+                  :method => :post})
+                %>
+              </td>
+            <% end %>
+          </tr>
+        <% end %>
+      </table>
+    </ul>
+  </div>
+<% else %>
+<div class="wiki">
+  <ul>
+    <li><em><%= l(:label_none) %></em></li>
+  </ul>
+</div>
+<% end %>

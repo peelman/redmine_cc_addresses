@@ -1,0 +1,13 @@
+<%= error_messages_for :cc_address %>
+<table>
+  <tr>
+    <td><%= l(:label_cc_address) %>:</td>
+    <td><%= f.text_field :mail, :size => 50 %><%= f.hidden_field :issue_id, :value => @issue.id %></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <%= submit_tag l(:button_add) %>
+      <%= toggle_link l(:button_cancel), 'new-cc-address-form'%>
+    </td>
+  </tr>
+</table>

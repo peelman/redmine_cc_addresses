@@ -1,0 +1,19 @@
+<div id="cc-addresses">
+  <hr />
+
+  <div class="contextual">
+  <% if authorize_for('cc_addresses', 'create') %>
+      <%= toggle_link l(:button_add), 'new-cc-address-form' %>
+  <% end %>
+  </div>
+
+  <p><strong><%= l(:field_cc_addresses) %></strong></p>
+  <%= render :partial => 'issues/cc_addresses/list', :locals => {:issue => @issue} %>
+
+  <% remote_form_for(:new_address, @cc_address, 
+       :url => {:controller => :cc_addresses, :action => :create, :issue_id => @issue },
+       :method => :post,
+       :html => {:id => 'new-cc-address-form', :style => (@cc_address ? '' : 'display: none;')}) do |f| %>
+    <%= render :partial => 'issues/cc_addresses/form', :locals => { :f => f, :issue_id => @issue }%>
+  <% end %>
+</div>
