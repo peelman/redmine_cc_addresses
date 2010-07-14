@@ -10,6 +10,10 @@ Dispatcher.to_prepare :redmine_cc_addresses do
   unless Issue.included_modules.include? RedmineCcAddresses::IssuePatch
     Issue.send(:include, RedmineCcAddresses::IssuePatch)
   end
+
+  unless Mailer.included_modules.include? RedmineCcAddresses::MailerPatch
+    Mailer.send(:include, RedmineCcAddresses::MailerPatch)
+  end
 end
 
 require_dependency 'cc_addresses_issue_show_hook'

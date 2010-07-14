@@ -6,7 +6,7 @@
           <tr>
             <td style="border: 0; padding: 0;">
               <li>
-                <%= cc_address.mail %>
+                <%= mail_to cc_address.mail, nil, { :subject => issue.subject } %>
               </li>
             </td>
             <% if authorize_for('cc_addresses', 'destroy') %>
