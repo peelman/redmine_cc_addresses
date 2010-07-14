@@ -22,7 +22,7 @@ Redmine::Plugin.register :redmine_cc_addresses do
   name 'Issue CC Addresses'
   author 'Nick Peelman'
   description 'Allows CC Addresses to be attached to an issue'
-  version '0.0.1'
+  version '0.1.0'
 
   project_module :cc_addresses do |map|
     map.permission :view_cc_addresses, { }
