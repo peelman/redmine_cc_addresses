@@ -2,8 +2,6 @@
 
 Allows the addition of generic CC entries to allow status messages to get sent to non-registered or other external members of a project / Redmine instance.
 
-**Currently this just builds the CC list...we're not up to sending yet...that comes soon...
-
 ==Author
 
 Nick Peelman
