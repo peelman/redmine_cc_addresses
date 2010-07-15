@@ -27,7 +27,7 @@ end
 
 class ShowCcAddressesHook < Redmine::Hook::ViewListener
   render_on :view_issues_show_description_bottom, :partial => "issues/cc_addresses", :if => :has_permission?
-  render_on :view_issues_form_details_bottom, :partial => "issues/cc_addresses/new"
+#  render_on :view_issues_form_details_bottom, :partial => "issues/cc_addresses/new"
 
 private
   def protect_against_forgery?
