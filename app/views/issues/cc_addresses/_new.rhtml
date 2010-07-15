@@ -1,5 +1,5 @@
 <p id="p-cc-addresses"><label>Carbon Copy Addresses</label>
 <%- form.fields_for :cc_addresses do |cc_address| %>
-<%= cc_address.text_field :mail, :size => 15 %><%= cc_address.hidden_field :issue_id, :value => @issue.id %>
+<%= cc_address.text_field :mail, :size => 15 %><%= cc_address.hidden_field :issue_id, :value => issue.id %>
 <%- end %>
 </p>
