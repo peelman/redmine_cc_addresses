@@ -1,5 +1,5 @@
 <p id="p-cc-addresses"><label>Carbon Copy Addresses</label>
-<%- f.fields_for :cc_addresses do |cc_address| %>
+<%- form.fields_for :cc_addresses do |cc_address| %>
 <label class="floating">Address</label><%= cc_address.text_field :mail, :size => 15 %>
 <%- end %>
 </p>
