@@ -1,10 +1,7 @@
-<p id="p-cc-addresses">
-<%= issue.id %>
+<div id="div-cc-addresses">
 <%- form.fields_for :cc_addresses do |cc_address_form| %>
-	<p>
-		<%= cc_address_form.text_field :mail, :size => 50 %>
-		<%= cc_address_form.hidden_field :issue_id, :value => @issue.id %>
-		<input type="button" value="+" />
-	</p>
+	  <p id="cc-address-0">
+      <%= cc_address_form.text_field :mail, :size => 50, :label => 'CC Address' %>
+    </p>
 <%- end %>
-</p>
+</div>
