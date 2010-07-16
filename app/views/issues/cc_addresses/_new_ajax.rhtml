@@ -1,0 +1,11 @@
+<%- fields_for :issue, @issue, :builder => TabularFormBuilder do |f| %>
+	<%- f.fields_for :cc_addresses do |cc_address_form| %>
+	  <p>
+		<%= cc_address_form.text_field :mail, :size => 50, :label => 'CC Address' %>
+	  </p>
+	<%- end %>
+	<p>
+		<%= link_to_remote l(:label_add_cc_address), :update => "div-cc-addresses", :url  => { :controller => :cc_addresses, :action => :new_issue_add_cc, :count => (num_fields + 1) }, :html => { :class => 'icon icon-add' } %> 
+		<%= link_to_remote l(:label_remove_cc_address), :update => "div-cc-addresses", :url  => { :controller => :cc_addresses, :action => :new_issue_add_cc, :count => (num_fields - 1) }, :html => { :class => 'icon icon-del' } unless num_fields == 1 %>
+	</p>
+<%- end %>

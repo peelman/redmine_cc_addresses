@@ -1,5 +1,6 @@
 class CcAddressesController < ApplicationController
-  before_filter :find_project, :authorize
+  before_filter :find_project, :except => [ :new_issue_add_cc ]
+  before_filter :authorize, :except => [ :new_issue_add_cc ]
 
   def create
     @cc_address = CcAddress.new(params[:new_address])
@@ -34,6 +35,19 @@ class CcAddressesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to :controller => 'issues', :action => 'show', :id => @issue }
       format.js { render(:update) { |page| page.replace_html "cc-addresses", :partial => 'issues/cc_addresses', :locals => { :issue => @issue, :project => @project } } }
+    end
+  end
+
+  def new_issue_add_cc
+    @issue = Issue.new
+    num_fields = (params[:count].to_i != 0) ? params[:count].to_i : 1
+    num_fields.times do
+      @issue.cc_addresses.build
+    end
+    
+    respond_to do |format|
+      format.html { render :partial => 'issues/cc_addresses/new_ajax', :locals => { :issue => @issue, :num_fields => num_fields } }
+      format.js { render :partial => 'issues/cc_addresses/new_ajax', :locals => { :issue => @issue, :num_fields => num_fields } }
     end
   end
 

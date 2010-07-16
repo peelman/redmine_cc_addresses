@@ -1,3 +1,5 @@
 en:
   field_cc_addresses: Carbon Copy Addresses
   label_cc_address: Address
+  label_add_cc_address: Add Address
+  label_remove_cc_address: Remove Address

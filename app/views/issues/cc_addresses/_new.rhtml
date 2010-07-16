@@ -4,4 +4,7 @@
       <%= cc_address_form.text_field :mail, :size => 50, :label => 'CC Address' %>
     </p>
 <%- end %>
+	<p>
+		<%= link_to_remote l(:label_add_cc_address), :update => "div-cc-addresses", :url  => { :controller => :cc_addresses, :action => :new_issue_add_cc, :count => 2 }, :html => { :class => 'icon icon-add' } %>
+	</p>
 </div>
