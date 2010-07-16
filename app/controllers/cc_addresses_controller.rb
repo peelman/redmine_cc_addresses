@@ -40,14 +40,10 @@ class CcAddressesController < ApplicationController
 
   def new_issue_add_cc
     @issue = Issue.new
-    num_fields = (params[:count].to_i != 0) ? params[:count].to_i : 1
-    num_fields.times do
-      @issue.cc_addresses.build
-    end
-    
+    @issue.cc_addresses.build
     respond_to do |format|
-      format.html { render :partial => 'issues/cc_addresses/new_ajax', :locals => { :issue => @issue, :num_fields => num_fields } }
-      format.js { render :partial => 'issues/cc_addresses/new_ajax', :locals => { :issue => @issue, :num_fields => num_fields } }
+      format.html { render :partial => 'issues/cc_addresses/new_ajax', :locals => { :issue => @issue } }
+      format.js { render(:update) { |page| page.insert_html :bottom, 'div-cc-addresses', :partial => 'issues/cc_addresses/new_ajax', :locals => { :issue => @issue } } }
     end
   end
 
