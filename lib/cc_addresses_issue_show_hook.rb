@@ -46,6 +46,6 @@ private
   end
 
   def can_add_cc_addresses?(context)
-    context[:project].module_enabled?('cc_addresses') and User.current.allowed_to?(:add_cc_addresses, context[:project])
+    context[:project].module_enabled?('cc_addresses') and User.current.allowed_to?(:add_cc_addresses, context[:project]) and context[:issue].new_record?
   end  
 end
