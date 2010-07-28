@@ -7,8 +7,9 @@ Allows the addition of generic CC entries to allow status messages to get sent t
 + Validates email addresses on entry (the regex here may require tweaking, we'll see)
 
 ###Version
-+ Currently at 0.1
++ Currently at 0.1.1
 + Requires Redmine 0.9.x (built/tested on 0.9.6, untested on previous versions, but it should work...)
++ Should work on Redmine 1.0.0.  If / When redmine adds my issue controller hook in place \([link](http://www.redmine.org/issues/5891)\) you will be able to add CC Addresses at issue creation.
 
 ###Usage
 ####Install
