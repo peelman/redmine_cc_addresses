@@ -31,8 +31,10 @@ class ShowCcAddressesHook < Redmine::Hook::ViewListener
 
   def controller_issues_new_prepare(context = {})
     num_cc_fields = (context[:params][:num_cc_fields].to_i != 0) ? context[:params][:num_cc_fields].to_i : 1
-    num_cc_fields.times do
-      context[:issue].cc_addresses.build
+    if (can_add_cc_addresses?(context))
+      num_cc_fields.times do
+        context[:issue].cc_addresses.build
+      end
     end
   end
     
