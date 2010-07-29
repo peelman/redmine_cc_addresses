@@ -1,5 +1,13 @@
 en:
-  field_cc_addresses: CC Addresses
   label_cc_address: Address
   label_add_cc_address: Add Address
   label_remove_cc_address: Remove Address
+  field_cc_addresses: CC Addresses
+  activerecord:
+    errors:
+      models:
+        cc_address:
+          attributes:
+            mail:
+              blank: "Email can not be blank"
+              invalid: "Email is invalid"
