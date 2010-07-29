@@ -1,6 +1,6 @@
 module RedmineCcAddresses
   # Patches Redmine's Issues Model dynamically. Adds a relationship
-  # Issue +has_many+ to IssueResource
+  # Issue +has_many+ to CcAddress
   module IssuePatch
     def self.included(base) # :nodoc:
       # Same as typing in the class
