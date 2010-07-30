@@ -10,7 +10,7 @@ Allows the addition of generic CC entries to allow status messages to get sent t
 + Currently at 0.1.1
 + Requires Redmine 0.9.x (built/tested on 0.9.6, untested on previous versions, but it should work...)
 + Refuses to work on Redmine 1.0.0. \([Bug filed](http://www.redmine.org/issues/6000)\)
-+  The workaround is to manually add <tt>cc_addresses_attributes</tt> to the <tt>SAFE_ATTRIBUTES</tt> array in the Issue model.
+ + The workaround is to manually add <tt>cc\_addresses\_attributes</tt> to the <tt>SAFE_ATTRIBUTES</tt> array in the Issue model.
 
 ###Usage
 ####Install
