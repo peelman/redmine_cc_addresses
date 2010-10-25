@@ -4,6 +4,8 @@ require 'redmine'
 require 'dispatcher'
 
 Dispatcher.to_prepare :redmine_cc_addresses do
+  require_dependency 'cc_addresses_issue_show_hook'
+
   require_dependency 'issue'
   # Guards against including the module multiple time (like in tests)
   # and registering multiple callbacks
@@ -16,8 +18,6 @@ Dispatcher.to_prepare :redmine_cc_addresses do
     Mailer.send(:include, RedmineCcAddresses::MailerPatch)
   end
 end
-
-require_dependency 'cc_addresses_issue_show_hook'
 
 Redmine::Plugin.register :redmine_cc_addresses do
   name 'Issue CC Addresses'
