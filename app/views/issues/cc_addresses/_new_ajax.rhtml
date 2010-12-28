@@ -1,7 +1,7 @@
 <%- fields_for :issue, @issue, :builder => TabularFormBuilder do |f| %>
 	<%- f.fields_for :cc_addresses, :child_index => Time.now.to_i + Time.now.usec do |cc_address_form| %>
 	  <p>
-		  <%= cc_address_form.text_field :mail, :size => 50, :label => 'CC Address' %> <a class="icon icon-del" style="font-size:75%" href="#" onclick="this.parentNode.remove(); return false;"><%= l('label_remove') %></a>
+		  <%= cc_address_form.text_field :mail, :size => 50, :label => 'CC Address' %> <a class="icon icon-del" style="font-size:75%" href="#" onclick="this.parentNode.remove(); return false;"><%= l('label_remove_cc_address') %></a>
 	  </p>
 	<%- end %>
 <%- end %>
