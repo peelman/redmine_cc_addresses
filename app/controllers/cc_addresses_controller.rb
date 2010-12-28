@@ -1,6 +1,7 @@
 class CcAddressesController < ApplicationController
   before_filter :find_project, :except => [ :new_issue_add_cc ]
   before_filter :authorize, :except => [ :new_issue_add_cc ]
+  unloadable
 
   def create
     @cc_address = CcAddress.new(params[:new_address])
