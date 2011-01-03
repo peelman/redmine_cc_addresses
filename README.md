@@ -42,7 +42,7 @@ Extrapolated and hacked as a cross between:
 + Daniel Vandersluis's Redmine Resources plugin \(http://github.com/dvandersluis/redmine_resources\)
 and
 + Dave Thomas's CClist plugin \(http://github.com/peoplemerge/redmine-cclist-plugin\)
-+ Thanks to edelgado and mtah for their contributions!
++ Thanks to [edelgado](http://github.com/edelgado) and [mtah](http://github.com/mtah) for their contributions!
 
 Extra Special Thanks to Chris Moore (http://github.com/cdmwebs)
 
