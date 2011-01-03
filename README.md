@@ -11,6 +11,7 @@ Allows the addition of generic CC entries to allow status messages to get sent t
 + Requires Redmine 0.9.x (built/tested on 0.9.6, untested on previous versions, but it should work...)
 + Refuses to work on Redmine 1.0.0. \([Bug filed](http://www.redmine.org/issues/6000)\)
  + The workaround is to manually add <tt>cc\_addresses\_attributes</tt> to the <tt>SAFE_ATTRIBUTES</tt> array in the Issue model.
+ + As of 12/12/2010 this has been fixed in the Redmine Trunk and should be in the next release. edelgado is working on integrating the changes necessary for it to run cleanly under newer releases.
 
 ###Usage
 ####Install
@@ -41,6 +42,7 @@ Extrapolated and hacked as a cross between:
 + Daniel Vandersluis's Redmine Resources plugin \(http://github.com/dvandersluis/redmine_resources\)
 and
 + Dave Thomas's CClist plugin \(http://github.com/peoplemerge/redmine-cclist-plugin\)
++ Thanks to edelgado and mtah for their contributions!
 
 Extra Special Thanks to Chris Moore (http://github.com/cdmwebs)
 
