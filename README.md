@@ -48,4 +48,4 @@ Extra Special Thanks to Chris Moore (http://github.com/cdmwebs)
 
 ##Licensing
 * This plugin is open-source and licensed under the "GNU General Public License v2" (GPL, http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
-* &copy; 2010 Nick Peelman
+* &copy; 2010-2011 Nick Peelman
