@@ -1,0 +1,13 @@
+de:
+ label_cc_address: Addresse
+ label_add_cc_address: Addresse hinzufügen
+ label_remove_cc_address: Addresse entfernen
+ field_cc_addresses: CC Addressen
+ activerecord:
+   errors:
+     models:
+       cc_address:
+         attributes:
+           mail:
+             blank: "Die Email-Adresse muss gesetzt sein."
+             invalid: "Die Email-Adresse ist ungültig."
