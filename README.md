@@ -8,14 +8,17 @@ Allows the addition of generic CC entries to allow status messages to get sent t
 
 ###Version
 + Currently at 0.1.1
-+ Requires Redmine 1.1.x or later
-++ or
++ Requires Redmine 1.1.x or later 
+
+	or
+
 + Requires ChiliProject 2.0 or later
 
 ###Languages
 + English
 + German
-If you'd like to submit a translation, please do so!
+
+	If you'd like to submit a translation, please do so!
 
 ###Usage
 ####Install
