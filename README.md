@@ -1,17 +1,21 @@
-#Redmine CC Addresses Plugin
+#Redmine / ChiliProject CC Addresses Plugin
 ##About
-Allows the addition of generic CC entries to allow status messages to get sent to non-registered or other external members of a project / Redmine instance.
+Allows the addition of generic CC entries to allow status messages to get sent to non-registered or other external members of a project / Redmine/CP instance.
 ###Features
 + Permissions for Viewing, Creating, and Removing Addresses from issues
-+ Extends Redmine's existing Mailer model, rules like BCC recipients are obeyed
++ Extends Redmine/CP's existing Mailer model, rules like BCC recipients are obeyed
 + Validates email addresses on entry (the regex here may require tweaking, we'll see)
 
 ###Version
 + Currently at 0.1.1
-+ Requires Redmine 0.9.x (built/tested on 0.9.6, untested on previous versions, but it should work...)
-+ Refuses to work on Redmine 1.0.0. \([Bug filed](http://www.redmine.org/issues/6000)\)
- + The workaround is to manually add <tt>cc\_addresses\_attributes</tt> to the <tt>SAFE_ATTRIBUTES</tt> array in the Issue model.
- + As of 12/12/2010 this has been fixed in the Redmine Trunk and should be in the next release. edelgado is working on integrating the changes necessary for it to run cleanly under newer releases.
++ Requires Redmine 1.1.x or later
+++ or
++ Requires ChiliProject 2.0 or later
+
+###Languages
++ English
++ German
+If you'd like to submit a translation, please do so!
 
 ###Usage
 ####Install
@@ -42,7 +46,7 @@ Extrapolated and hacked as a cross between:
 + Daniel Vandersluis's Redmine Resources plugin \(http://github.com/dvandersluis/redmine_resources\)
 and
 + Dave Thomas's CClist plugin \(http://github.com/peoplemerge/redmine-cclist-plugin\)
-+ Thanks to [edelgado](http://github.com/edelgado) and [mtah](http://github.com/mtah) for their contributions!
++ Thanks to [edelgado](http://github.com/edelgado), [mtah](http://github.com/mtah), and [cforce](http://github.com/cforce) for their contributions!
 
 Extra Special Thanks to Chris Moore (http://github.com/cdmwebs)
 
