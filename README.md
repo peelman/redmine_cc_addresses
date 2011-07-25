@@ -7,7 +7,7 @@ Allows the addition of generic CC entries to allow status messages to get sent t
 + Validates email addresses on entry (the regex here may require tweaking, we'll see)
 
 ###Version
-+ Currently at 0.1.1
++ Currently at 0.2
 + Requires Redmine 1.1.x or later 
 
 	or
