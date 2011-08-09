@@ -22,6 +22,8 @@ end
 Redmine::Plugin.register :redmine_cc_addresses do
   name 'Issue CC Addresses'
   author 'Nick Peelman'
+  author_url 'http://peelman.us'
+  url 'http://github.com/peelman/redmine_cc_addresses'
   description 'Allows CC Addresses to be attached to an issue'
   version '0.2.0'
 
