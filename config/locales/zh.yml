@@ -1,0 +1,13 @@
+zh:
+  label_cc_address: 地址
+  label_add_cc_address: 增加地址
+  label_remove_cc_address: 移除地址
+  field_cc_addresses: 抄送地址
+  activerecord:
+    errors:
+      models:
+        cc_address:
+          attributes:
+            mail:
+              blank: "Email地址不可为空"
+              invalid: "Email地址不正确"
