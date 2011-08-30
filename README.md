@@ -1,13 +1,16 @@
 #Redmine / ChiliProject CC Addresses Plugin
 ##About
 Allows the addition of generic CC entries to allow status messages to get sent to non-registered or other external members of a project / Redmine/CP instance.
+
+Check out Eric Davis's [Email Watchers](http://github.com/edavis10/redmine_email_watchers) for an alternative plugin.
+
 ###Features
 + Permissions for Viewing, Creating, and Removing Addresses from issues
 + Extends Redmine/CP's existing Mailer model, rules like BCC recipients are obeyed
 + Validates email addresses on entry (the regex here may require tweaking, we'll see)
 
 ###Version
-+ Currently at 0.2
++ Currently at 0.3
 + Requires Redmine 1.1.x or later 
 
 	or
@@ -17,6 +20,7 @@ Allows the addition of generic CC entries to allow status messages to get sent t
 ###Languages
 + English
 + German
++ Chinese
 
 	If you'd like to submit a translation, please do so!
 
