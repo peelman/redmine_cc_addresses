@@ -2,7 +2,7 @@
 <% issue.cc_addresses.build %>
 <%- form.fields_for :cc_addresses do |cc_address_form| %>
   <p>
-    <%= cc_address_form.text_field :mail, :size => 50, :label => 'CC Address' %>
+    <%= cc_address_form.text_field :mail, :size => 50, :label => l(:field_cc_addresses) %>
   </p>
 <%- end %>
 </div>
